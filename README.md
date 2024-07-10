@@ -38,3 +38,19 @@ add name to make sure u dont need to hard code
 
 my_site/urls.py >> from django.urls import path, include
 include to make sure our project aware about urls.py in application
+
+Create templates in app
+blog/templates/blog
+
+and create it in root folder /templates/base.html
+
+Create templates and skeleton of HTML files
+Adding block that we can replace it
+
+settings.py in my_site to add BASE_DIR / 'templates'
+
+Create index.html
+
+1. {% extends "base.html" %} >> for calling the templates haha
+2. fill the page
+3. calling the index.html in views.py > blog/templates/blog/index.html (why Django can find the index.html in that dir)
